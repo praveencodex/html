@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+             h1 {
+            margin-top: 20px;
+        }
+        .gallery {
+            display: flex;
+            gap: 20px;
+            margin: 20px 0;
+        }
+        .gallery section {
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .gallery img {
+            width: 20px;
+            height: 50px 50px;
+            border-radius: 5px;
+            display: flex;
+        }
+        .gallery a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+        .gallery a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>image gallary</h1>
+    <div class="gallary">
+        <section>
+            <img src="https://media.istockphoto.com/id/583809524/photo/alberta-wilderness-near-banff.jpg?s=612x612&w=0&k=20&c=hiI3ib9ibDxAgqEZEH09EO3JOw94v5xh6hzcuXGhO-M=" alt="A scenic mountain landscape">
+            <a href="https://www.istockphoto.com/photos/mountain-landscape" target="_blank">Learn more about mountains</a>
+        </section>
+        <section>
+            <img src="data:image/jpeg;base64,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" alt="araku vally">
+            <a href="https://indiantouristblog.wordpress.com/2015/08/31/araku-valley-one-of-the-best-ways-of-getting-closer-to-the-nature/" target="_blank">Araku vally</a>
+        </section>
+       
+    </div>
+</body>
+</html>
